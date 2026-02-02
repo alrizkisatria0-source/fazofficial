@@ -43,8 +43,54 @@
             text-align: center;
             margin-top: 40px;
         }
+        .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .badge-promo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #dc3545;
+        color: white;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+
+    .price-old {
+        text-decoration: line-through;
+        color: gray;
+        font-size: 14px;
+    }
+    @media (max-width: 576px) {
+        .banner {
+            padding: 50px 15px;
+        }
+
+        .banner h1 {
+            font-size: 28px;
+        }
+
+        .banner p {
+            font-size: 16px;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        .card-img-top {
+            height: 180px;
+        }
+    }
     </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -115,7 +161,104 @@
         </div>
     </div>
 </section>
+<!-- PROMO -->
+<section class="container my-5">
+    <div class="row text-center mb-4">
+        <h2 class="fw-bold" style="color:#ffffff;">🔥 Promo Spesial Minggu Ini</h2>
+    </div>
 
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm position-relative">
+                <span class="badge-promo">PROMO</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgqVZ4EYby2iiFq01PHOQC_0UhG9-fQ-pp6w&s" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">ASUS ROG Gaming</h5>
+                    <p class="price-old">Rp 15.999.000</p>
+                    <p class="price">Rp 14.999.000</p>
+                    <a href="#" class="btn btn-merah fw-bold">Beli Promo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm position-relative">
+                <span class="badge-promo">PROMO</span>
+                <img src="https://static.retailworldvn.com/Products/Images/12217/321638/laptop-acer-aspire-5-slim-i9-13900h-16gb-512gb-win11-a515-58m-91y5-gray-201025-054123.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Acer Aspire 5</h5>
+                    <p class="price-old">Rp 8.499.000</p>
+                    <p class="price">Rp 7.499.000</p>
+                    <a href="#" class="btn btn-merah fw-bold">Beli Promo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SERVICE -->
+<section class="container my-5">
+    <div class="row text-center mb-4">
+        <h2 class="fw-bold" style="color:#ffffff;">Layanan Kami</h2>
+    </div>
+
+    <div class="row g-4 text-center">
+        <div class="col-md-4 col-12">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">🚚 Pengiriman Cepat</h5>
+                    <p>Pengiriman ke seluruh Indonesia dengan aman dan cepat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">🛡️ Garansi Resmi</h5>
+                    <p>Produk original dengan garansi resmi pabrik.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">💬 Customer Support</h5>
+                    <p>Siap membantu Anda setiap hari via chat & telepon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="row mt-4">
+    <div class="col text-center">
+        <a href="https://wa.me/6285751787232" target="_blank"
+           class="btn btn-merah fw-bold px-4 py-2">
+            💬 Hubungi via WhatsApp
+        </a>
+    </div>
+</div>
+<!-- SOSIAL MEDIA -->
+<section class="container my-5">
+    <div class="row text-center mb-3">
+        <h2 class="fw-bold" style="color:#ffffff;">Ikuti Kami</h2>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-12 text-center">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">📸 Instagram</h5>
+                    <p>@wzzstria</p>
+                    <a href="https://instagram.com/wzzstria" target="_blank"
+                       class="btn btn-merah fw-bold">
+                        Kunjungi Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- FOOTER -->
 <footer>
     © 2026 LaptopFAZ - Toko Laptop Online Terpercaya
