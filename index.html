@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        html {
+    scroll-behavior: smooth;
+        }
         body {
             background-color: #dc3545;
         }
@@ -37,7 +40,7 @@
             font-weight: bold;
         }
         footer {
-            background-color: #0d6efd;
+            background-color: #6c757d;
             color: white;
             padding: 15px;
             text-align: center;
@@ -47,6 +50,16 @@
         height: 220px;
         object-fit: cover;
     }
+    body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
 
     .badge-promo {
         position: absolute;
@@ -104,6 +117,100 @@
             padding: 8px;
         }
     }
+    .testimoni-section {
+    background: linear-gradient(to right, #0d6efd, #dc3545);
+    padding: 60px 20px;
+    color: white;
+}
+
+.testimoni-card {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+.reservasi-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.subscribe-section {
+    background-color: #6c757d;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-bottom {
+    background-color: #0d6efd;
+    color: white;
+    padding: 40px 20px;
+}
+.card {
+    transition: all 0.35s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+.btn-merah {
+    transition: all 0.3s ease;
+}
+
+.btn-merah:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.navbar-custom {
+    transition: 0.3s;
+}
+
+.navbar-shadow {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.wa-float:hover {
+    transform: scale(1.1);
+}
     </style>
 </head>
 
@@ -118,10 +225,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Promo</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+    <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
+    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
             </ul>
         </div>
     </div>
@@ -137,7 +244,7 @@
 </section>
 
 <!-- PRODUK -->
-<section class="container my-5">
+<section id="produk" class="container my-5">
     <div class="row text-center mb-4">
         <h2 class="fw-bold" style="color:#ffffff;">Laptop Terlaris</h2>
     </div>
@@ -178,7 +285,7 @@
     </div>
 </section>
 <!-- PROMO -->
-<section class="container my-5">
+<section id="promo" class="container my-5">
     <div class="row text-center mb-4">
         <h2 class="fw-bold" style="color:#ffffff;">🔥 Promo Spesial Minggu Ini</h2>
     </div>
@@ -212,7 +319,7 @@
     </div>
 </section>
 <!-- SERVICE -->
-<section class="container my-5">
+<section class="reservasi-section fade-in">
     <div class="row text-center mb-4">
         <h2 class="fw-bold" style="color:#ffffff;">Layanan Kami</h2>
     </div>
@@ -275,13 +382,134 @@
         </div>
     </div>
 </section>
-<!-- FOOoTER -->
+<!-- TESTIMONI -->
+<section class="testimoni-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Apa Kata Customer</h2>
+            <p>Kepuasan pelanggan adalah prioritas kami</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimoni-card">
+                    <h6 class="fw-bold">Laptopnya cepat & original</h6>
+                    ⭐⭐⭐⭐⭐
+                    <p class="mt-2">Pengiriman cepat dan packing aman banget.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimoni-card">
+                    <h6 class="fw-bold">Harga lebih murah dari toko lain</h6>
+                    ⭐⭐⭐⭐⭐
+                    <p class="mt-2">Pelayanan ramah dan respons cepat.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimoni-card">
+                    <h6 class="fw-bold">Recommended!</h6>
+                    ⭐⭐⭐⭐⭐
+                    <p class="mt-2">Sudah beli 2x, selalu puas dengan produknya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- RESERVASI -->
+<section id="kontak" class="reservasi-section">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Form Pemesanan</h2>
+            <p>Isi data untuk pemesanan laptop</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">No. Kontak</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Produk yang dipesan</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-merah w-100 fw-bold">
+                        Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SUBSCRIBE -->
+<section class="subscribe-section text-center fade-in">
+    <h5 class="fw-bold">Subscribe</h5>
+    <p>Dapatkan info promo terbaru</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Masukkan Email">
+                <button class="btn btn-warning">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FOOTER TAMBAHAN -->
+<section class="footer-bottom">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-md-4">
+                <h6 class="fw-bold">LaptopFAZ</h6>
+                <p>Toko laptop online terpercaya dengan harga terbaik.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h6 class="fw-bold">Navigasi</h6>
+                <p>Beranda<br>Produk<br>Promo<br>Kontak</p>
+            </div>
+
+            <div class="col-md-4">
+                <h6 class="fw-bold">Kontak</h6>
+                <p>WhatsApp: 0857-5178-7232<br>Email: info@laptopfaz.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
 <footer>
     © 2026 LaptopFAZ - Toko Laptop Online Terpercaya
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<a href="https://wa.me/6285751787232" class="wa-float" target="_blank">💬</a>
+<script>
+window.addEventListener("scroll", function(){
+    document.querySelector(".navbar-custom")
+    .classList.toggle("navbar-shadow", window.scrollY > 50);
+});
 
+const faders = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+},{threshold:0.2});
+
+faders.forEach(fader => observer.observe(fader));
+</script>
 </body>
 </html>
